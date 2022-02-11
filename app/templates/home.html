@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css')}}" />
     </head>
     <body>
-        Home
+        <h4>Hello {% if name != 'None'  %} {{name}} {% endif %}</h4>
     </body>
 </html>
