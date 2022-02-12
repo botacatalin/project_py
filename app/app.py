@@ -3,10 +3,9 @@ from flask import Flask
 from flask import render_template
 from markupsafe import escape
 import logging
-from flask import request
 
 app = Flask(__name__)
-# logging.basicConfig(filename='logs/log.log', encoding='utf-8', level=logging.DEBUG)
+# logging.basicConfig(filename='logs/log.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 @app.route("/<name>")
 @app.route("/")
